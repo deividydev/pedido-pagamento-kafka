@@ -27,3 +27,8 @@ No terminal, execute os seguintes comandos para restaurar pacotes, compilar e ro
 dotnet restore
 dotnet build
 dotnet run
+- .NET 8 (ou versão mais recente)
+- Apache Kafka
+- MediatR
+- Clean Architecture
+- Docker (para Kafka e Zookeeper)
