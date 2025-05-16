@@ -8,7 +8,7 @@ namespace Presentation.Controllers;
 public class OrderController : Controller
 {
     [HttpPost]
-    public async Task<IActionResult> CreateOrder([FromServices] Mediator _mediator)
+    public async Task<IActionResult> CreateOrder([FromServices] IMediator _mediator)
     {
         var request = new OrderParymentRequest(Guid.NewGuid(), 100);
 

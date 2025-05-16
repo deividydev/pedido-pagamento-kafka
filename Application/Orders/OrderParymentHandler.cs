@@ -11,6 +11,8 @@ public class OrderParymentHandler(IKafkaProducer kafkaProducer) : IRequestHandle
 
     public async Task Handle(OrderParymentRequest request, CancellationToken cancellationToken)
     {
+        Console.WriteLine("Payment completed.");
+
         var @event = new PaymentEvent(Guid.NewGuid(), 100);
 
         await _kafkaProducer.SendAsync("payment_topic", @event);
