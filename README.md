@@ -17,18 +17,18 @@ Sistema simples de pedidos utilizando Kafka, arquitetura limpa e CQRS. O projeto
 ```bash
 git clone <URL-do-repositório>
 cd pedido-pagamento-kafka
+```
 
-2. Inicie Kafka e Zookeeper via Docker Compose
+## 2. Inicie Kafka e Zookeeper via Docker Compose
 No diretório do projeto (onde está o arquivo docker-compose.yml), execute:
+```bash
 docker-compose up -d
+```
 
-3. Rode a API localmente
+## 3. Rode a API localmente
 No terminal, execute os seguintes comandos para restaurar pacotes, compilar e rodar a API:
+```bash
 dotnet restore
 dotnet build
 dotnet run
-- .NET 8 (ou versão mais recente)
-- Apache Kafka
-- MediatR
-- Clean Architecture
-- Docker (para Kafka e Zookeeper)
+```
