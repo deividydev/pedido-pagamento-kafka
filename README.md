@@ -32,3 +32,7 @@ dotnet restore
 dotnet build
 dotnet run
 ```
+
+## Autor
+
+Desenvolvido por Deividy Henrique Alves Pinheiro.
